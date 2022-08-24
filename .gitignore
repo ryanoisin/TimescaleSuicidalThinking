@@ -5,6 +5,3 @@
 *.RDS
 *.pdf
 *.PNG
-/Data/*
-/files/*
-/figures/*
