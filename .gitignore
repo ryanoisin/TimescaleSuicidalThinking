@@ -5,3 +5,5 @@
 *.RDS
 *.pdf
 *.PNG
+*.ai
+/figures/figures_AI/

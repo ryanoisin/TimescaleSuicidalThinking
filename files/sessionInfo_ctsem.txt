@@ -1,0 +1,25 @@
+R version 4.0.3 (2020-10-10)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 18.04.6 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/openblas/libblas.so.3
+LAPACK: /usr/lib/x86_64-linux-gnu/libopenblasp-r0.2.20.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8     LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8    LC_PAPER=en_US.UTF-8      
+ [8] LC_NAME=C                  LC_ADDRESS=C               LC_TELEPHONE=C             LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] rstan_2.21.2         ggplot2_3.3.5        StanHeaders_2.21.0-7 ctsem_3.5.4          Rcpp_1.0.9          
+
+loaded via a namespace (and not attached):
+ [1] pillar_1.6.4       compiler_4.0.3     plyr_1.8.7         prettyunits_1.1.1  tools_4.0.3        pkgbuild_1.2.0     jsonlite_1.7.2     mize_0.2.4         lifecycle_1.0.1    tibble_3.1.6      
+[11] gtable_0.3.0       lattice_0.20-41    pkgconfig_2.0.3    rlang_1.0.4        Matrix_1.2-18      cli_3.3.0          rstudioapi_0.13    parallel_4.0.3     curl_4.3.2         expm_0.999-6      
+[21] loo_2.4.1          gridExtra_2.3      withr_2.4.2        dplyr_1.0.7        generics_0.1.0     vctrs_0.4.1        stats4_4.0.3       grid_4.0.3         tidyselect_1.1.1   inline_0.3.19     
+[31] glue_1.6.2         data.table_1.14.2  R6_2.5.1           processx_3.5.2     fansi_0.5.0        callr_3.7.0        purrr_0.3.4        magrittr_2.0.3     codetools_0.2-16   matrixStats_0.61.0
+[41] ps_1.6.0           scales_1.1.1       ellipsis_0.3.2     cOde_1.0.0         colorspace_2.0-2   Deriv_4.1.3        V8_3.6.0           utf8_1.2.2         RcppParallel_5.1.5 munsell_0.5.0     
+[51] crayon_1.5.1      

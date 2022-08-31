@@ -1,3 +1,7 @@
+# code to fit ctsem model to full dataset
+  # Note: due to long run-time this model was fit on a different machine than the one
+  # used to run the analyses. For details see files/sessionInfo_ctsem.txt
+
 library(ctsem)
 library(rstan)
 set.seed(1234)
@@ -6,10 +10,8 @@ set.seed(1234)
 # --------- Load and Prepare Data  -------------------------------------
 # ----------------------------------------------------------------------
 
-
-data_list <- readRDS(file = "data_full_ctsem.RDS")
-data <- data_list$data_clean
-# data <- data_list$data_std
+data_list <- readRDS(file = "data/data_full_ctsem.RDS")
+data <- data_list$data_std
 
 colnames(data)[4] <- "TI"
 
@@ -43,19 +45,13 @@ chains = 3
 cores =3
 iter = 5000
 ctfit <- ctStanFit(data, ctmodel,
-                       nlcontrol = list(maxtimestep = 100),
-                       optimize = FALSE,
-                       nopriors = FALSE,
-                       chains = chains, cores = cores,plot=10,
-                       iter = iter, fit = TRUE, verbose = 0)
-saveRDS(ctfit, "full_MCMC.RDS")
+                   nlcontrol = list(maxtimestep = 100),
+                   optimize = FALSE,
+                   nopriors = FALSE,
+                   chains = chains, cores = cores,plot=10,
+                   iter = iter, fit = TRUE, verbose = 0)
+saveRDS(ctfit, "full_MCMC_std.RDS")
 
-
-
-
-
-# use ctStanFit() source code to fit the model
-# source("model_code.R")
-
-# save.image("image_ctstanfit.RDS")
-
+sink("sessionInfo_ctsem.txt")
+sessionInfo()
+sink()
