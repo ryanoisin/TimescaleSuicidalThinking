@@ -1,6 +1,6 @@
 # README
 
-This is the reproducibility archive for the paper "NAME" (preprint: <https://psyarxiv.com/>). It allows one to reproduce all analyses and results in the paper.
+This is the reproducibility archive for the paper "Mapping the Timescale of Suicidal Thinking"  (preprint: <https://psyarxiv.com/eus2q/>). It allows one to reproduce all analyses and results in the paper.
 
 ### Folders
 
